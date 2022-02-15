@@ -1,0 +1,42 @@
+// SKILLS
+#skills-grid ul{
+    list-style: none;
+    .fas{
+        display:none;
+    }
+    // font-size: 1rem;
+    li{
+        height: 4rem;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.5);
+            .fas{
+                display: block;
+                color: var(--bs-warning);
+            }
+        }
+    }
+    #lower-opacity{
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 992px){
+    #skills{
+        .container{
+            padding-bottom: 0 !important ;
+            h1{
+                padding-top: 0 !important;
+            }
+            #skills-grid{
+                margin: 0 !important;
+            }
+        }
+    }
+}
+@media (max-width:768px){
+
+    #skills{
+        padding-top: 3rem;
+    }
+}
